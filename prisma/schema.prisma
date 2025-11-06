@@ -22,7 +22,7 @@ model User {
   id        String   @id @default(uuid())
   name      String
   email     String   @unique
-  password  String?   // اختیاری
+  password  String?   
   image     String?
   habits    Habit[]
   createdAt DateTime @default(now())
@@ -41,7 +41,7 @@ model Habit {
   id          String     @id @default(uuid())
   title       String
   description String?
-  frequency   String      // daily | weekly | monthly
+  frequency   String      
   categoryId  String
   userId      String
   category    Category   @relation(fields: [categoryId], references: [id])
