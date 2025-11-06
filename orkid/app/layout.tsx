@@ -4,9 +4,6 @@ import "./globals.css";
 import { Providers } from "./providers";
 import Nvbar from "@/components/common/Nvbar";
 
-
-
-
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -33,10 +30,9 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <Providers>
-             <Nvbar />
-                {children}
+          <Nvbar />
+          {children}
         </Providers>
-  
       </body>
     </html>
   );

@@ -12,16 +12,18 @@ module.exports = {
   theme: {
     extend: {
       blur: {
-       '4xl' : '40px',
-       '5xl' : '50px',
-       '6xl' :  '60px',
-       'max' : '100px'
+        "4xl": "40px",
+        "5xl": "50px",
+        "6xl": "60px",
+        max: "100px",
       },
       colors: {
         main: "#7575FE",
         lightGrey: {
           100: "#F9F9F9",
           200: "#F0F0F0",
+          primary: "#16a34a",
+          secondary: "#a7f3d0",
         },
         dark: {
           100: "#3F3F46",
@@ -31,6 +33,10 @@ module.exports = {
       },
       screens: {
         xs: "250px",
+      },
+
+      borderRadius: {
+        xl: "1rem",
       },
     },
   },
